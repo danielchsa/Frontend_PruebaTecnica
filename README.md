@@ -8,5 +8,5 @@
 4. Ejecutar en la consola ng serve -o para inicializar el proyecto.
 
 
-###Nota:
+### Nota:
 Para que la aplicación tenga el comportamiento esperado, debe haber inicializado el back-end (Prueba_Tecnica)
