@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()" #form="ngForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Username</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        ngModel
+        name="user"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        ngModel
+        name="password"
+        required=""
+      />
+    </div>
+    <div class="mb-3">
+      <span *ngIf="error" class="text-danger">Invalid data</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+      Login
+    </button>
+    <p>
+      <a class="link-opacity-100-hover" routerLink="signup">Create account</a>
+    </p>
+  </form>
+</div>
